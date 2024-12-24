@@ -1,0 +1,78 @@
+📅 Week 1: Dataset Collection & Preprocessing
+Goal: Find and prepare the dataset(s) for analysis.
+
+Day 1–2: Dataset Identification
+    Centralized Dataset:
+        ✅ NASDAQ Nordic dataset (Ntakaris et al.)
+        ✅ NYSE TAQ (if access is feasible)
+    Decentralized Dataset:
+        ✅ Uniswap/SushiSwap transaction datasets from Kaggle or public blockchain APIs (e.g., Etherscan API, Dune Analytics).
+Deliverables:
+    Links to selected datasets.
+    Initial inspection of datasets (data types, size, structure).
+Tools: web3.py for blockchain data we can look it up if we want.
+
+Day 3–5: Data Preprocessing
+    Standardize Data: Align columns (timestamps, trade volume, prices, fees).
+    Filter Data: Remove anomalies and outliers.
+    Active vs Passive Labels: Define thresholds for active and passive trades.
+    Dataset Documentation: Document preprocessing steps.
+Deliverables:
+    Cleaned dataset(s) ready for analysis.
+    Data preprocessing script.
+
+📅 Week 2: Analysis & Modeling
+Goal: Conduct statistical analysis, build regression models, and simulate scenarios.
+
+Day 6–8: Statistical Analysis
+    Regression Analysis: Trade frequency, commission rates, and net returns.
+    Performance Metrics: Calculate Sharpe Ratio, Net Returns.
+    Epps Effect: Examine return correlations over time.
+Deliverables:
+    Statistical summary and key relationships identified.
+    Visualizations (scatter plots, regression lines).
+
+Day 9–11: Simulation & Scenario Modeling
+    Build simulations for varying:
+        Trade frequency
+        Investment size
+        Commission fees
+    Compare outcomes across centralized vs decentralized exchanges.
+Deliverables:
+    Simulation outputs and visualizations.
+    Key insights documented.
+
+Day 12–14: Theoretical Model Integration
+    Bouchaud's Response Function: Model price impact across exchanges.
+    Volatility Clustering (GARCH Model): Assess risk-adjusted returns.
+    Epps Effect: Validate theoretical predictions with data.
+Deliverables:
+    Results from Bouchaud's model and GARCH analysis.
+    Final visualizations showing trade-offs.
+
+📅 Week 3: Results & Write-Up
+Goal: Organize results and draft the paper.
+
+Day 15–17: Write-Up Drafting
+    Already on overleaf how to do it (10 pages text and max 15 comprehending images)
+Deliverables:
+    First full draft of the paper.
+    Clear figures and tables.
+
+Day 18: Code Cleanup
+    Create a main.py file that:
+        Runs the full analysis.
+        Has a Boolean switch for demo mode (subset of data).
+    Organize folders:
+        /data (demo data + README for full dataset link).
+        /scripts (preprocessing, analysis, simulation).
+        /outputs (graphs, tables).
+Deliverables:
+    Main code file (main.py) with demo switch.
+    README file explaining the folder structure and dependencies.
+
+Day 19: Final Submission
+    Double-check:
+        Write-up is clean and formatted.
+        Code runs without errors in demo mode.
+        Dataset links are clearly provided.
