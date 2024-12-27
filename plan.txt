@@ -3,17 +3,27 @@ Goal: Find and prepare the dataset(s) for analysis.
 
 Day 1–2: Dataset Identification
     Centralized Dataset:
+<<<<<<< HEAD
         ✅ NASDAQ Nordic dataset (Ntakaris et al.)
         ✅ NYSE TAQ (if access is feasible)
         Did not found much, we could generate our data
 
     Decentralized Dataset:
         ✅ Uniswap/SushiSwap transaction datasets from Kaggle or public blockchain APIs (e.g., Etherscan API, Dune Analytics).
+=======
+https://github.com/hank08819/HFTTradingMAP (1 minute data of most famous Stock) then we need to simulate investments and commissions
+https://www.kaggle.com/datasets/wentinglu/highfrequency-futures-data-china (1 minute data of most famous chineses Stock) then we need to simulate investments and commissions
+https://firstratedata.com/free-intraday-data (1 minute data but only for 2 weeks)
+I tried with https://marketstack.com/documentation but it gives me 403 error when I get the data with their APIs
+        
+    Decentralized Dataset:
+Etherscan API works well for what we need (example of use in the main.py). We can pick 1000 ETH address (both HFT investors and passive investors) and see how they performed (you can see buy and sell transactions and estimate find the returns in USD for example
+Uniswap is also a good for the same purpose and you can check different crypto, not only ETH
+>>>>>>> 144ae532d7d413daf0c7d44361efbb790c0dca51
 
 Deliverables:
     Links to selected datasets.
     Initial inspection of datasets (data types, size, structure).
-Tools: web3.py for blockchain data we can look it up if we want.
 
 Day 3–5: Data Preprocessing
     Standardize Data: Align columns (timestamps, trade volume, prices, fees).
