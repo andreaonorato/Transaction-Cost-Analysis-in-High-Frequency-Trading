@@ -5,8 +5,11 @@ Day 1–2: Dataset Identification
     Centralized Dataset:
         ✅ NASDAQ Nordic dataset (Ntakaris et al.)
         ✅ NYSE TAQ (if access is feasible)
+        Did not found much, we could generate our data
+
     Decentralized Dataset:
         ✅ Uniswap/SushiSwap transaction datasets from Kaggle or public blockchain APIs (e.g., Etherscan API, Dune Analytics).
+
 Deliverables:
     Links to selected datasets.
     Initial inspection of datasets (data types, size, structure).
