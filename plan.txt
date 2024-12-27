@@ -5,6 +5,8 @@ Day 1–2: Dataset Identification
     Centralized Dataset:
 https://github.com/hank08819/HFTTradingMAP (1 minute data of most famous Stock) then we need to simulate investments and commissions
 https://www.kaggle.com/datasets/wentinglu/highfrequency-futures-data-china (1 minute data of most famous chineses Stock) then we need to simulate investments and commissions
+https://firstratedata.com/free-intraday-data (1 minute data but only for 2 weeks)
+I tried with https://marketstack.com/documentation but it gives me 403 error when I get the data with their APIs
         
     Decentralized Dataset:
 Etherscan API works well for what we need (example of use in the main.py). We can pick 1000 ETH address (both HFT investors and passive investors) and see how they performed (you can see buy and sell transactions and estimate find the returns in USD for example
