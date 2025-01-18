@@ -3,33 +3,24 @@ Goal: Find and prepare the dataset(s) for analysis.
 
 Day 1–2: Dataset Identification
     Centralized Dataset:
-<<<<<<< HEAD
-        ✅ NASDAQ Nordic dataset (Ntakaris et al.)
-        ✅ NYSE TAQ (if access is feasible)
-        Did not found much, we could generate our data
+        https://github.com/hank08819/HFTTradingMAP (1 minute data of most famous Stock) then we need to simulate investments and commissions
+https://www.kaggle.com/datasets/wentinglu/highfrequency-futures-data-china (1 minute data of most famous chineses Stock) then we need to simulate investments and commissions
+https://firstratedata.com/free-intraday-data (1 minute data but only for 2 weeks) - only for SPY and EEM ETFs
+https://etsin.fairdata.fi/dataset/73eb48d7-4dbc-4a10-a52a-da745b47a649/data (1 minute data I think)
 
     Decentralized Dataset:
-        ✅ Uniswap/SushiSwap transaction datasets from Kaggle or public blockchain APIs (e.g., Etherscan API, Dune Analytics).
-=======
-https://github.com/hank08819/HFTTradingMAP (1 minute data of most famous Stock) then we need to simulate investments and commissions
-https://www.kaggle.com/datasets/wentinglu/highfrequency-futures-data-china (1 minute data of most famous chineses Stock) then we need to simulate investments and commissions
-https://firstratedata.com/free-intraday-data (1 minute data but only for 2 weeks)
-I tried with https://marketstack.com/documentation but it gives me 403 error when I get the data with their APIs
-        
-    Decentralized Dataset:
-Etherscan API works well for what we need (example of use in the main.py). We can pick 1000 ETH address (both HFT investors and passive investors) and see how they performed (you can see buy and sell transactions and estimate find the returns in USD for example
-Uniswap is also a good for the same purpose and you can check different crypto, not only ETH
->>>>>>> 144ae532d7d413daf0c7d44361efbb790c0dca51
+Etherscan API works well for what we need (example of use in the main.py). We can pick 1000 ETH address (both HFT investors and passive investors) and see how they performed (you can see buy and sell transactions and estimate the returns in USD for example
+Uniswap is also good for the same purpose and you can check different crypto, not only ETH
+>>>>>>> 144ae532d7d413daf0c7d44361efbb790c0dca51 etherscan address example
 
 Deliverables:
-    Links to selected datasets.
-    Initial inspection of datasets (data types, size, structure).
+    Links to selected datasets. - All grouped selected dataset - https://mega.nz/folder/AOcCAS4Q#whnWw3j81doBSmpBWAWDxw
+    Initial inspection of datasets (data types, size, structure). - present in the EDA Notebook file
 
 Day 3–5: Data Preprocessing
-    Standardize Data: Align columns (timestamps, trade volume, prices, fees).
-    Filter Data: Remove anomalies and outliers.
+    Standardize Data: Align columns (timestamp    open    high     low   close  volume  Centralized/Decentralized).
+    Merge Data: Merge all dataset data with a column called (Dataset_name and a binary column for centralized/decentralized and file name)
     Active vs Passive Labels: Define thresholds for active and passive trades.
-    Dataset Documentation: Document preprocessing steps.
 Deliverables:
     Cleaned dataset(s) ready for analysis.
     Data preprocessing script.
